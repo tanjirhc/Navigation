@@ -1,7 +1,7 @@
 const body = document.querySelector("body"),
       nav = document.querySelector("nav"),
       modeToggle = document.querySelector(".dark-light"),
-      searchToggle = document.querySelector(".searchBox");
+      searchToggle = document.querySelector(".searchToggle");
 
 // js code to toggle dark and light mode
       modeToggle.addEventListener("click" , () =>{
@@ -10,6 +10,6 @@ const body = document.querySelector("body"),
       })
 
 // js code to toggle search and cancel mode
-//modeToggle.addEventListener("click" , () =>{
- // modeToggle.classList.toggle("active");
-//})
+      searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      })

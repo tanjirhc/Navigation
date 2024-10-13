@@ -103,7 +103,7 @@ nav .nav-bar .logo a{
 }
 
 .darkLight-searchBox .dark-light,
-.darkLight-searchBox .searchBox{
+.darkLight-searchBox .searchToggle{
   height: 40px;
   width: 40px;
   display: flex;
@@ -136,7 +136,17 @@ nav .nav-bar .logo a{
   pointer-events: none;
 }
 
-.searchBox i.cancel{
+.searchToggle i.cancel{
+  opacity: 0;
+  pointer-events: none;
+}
+
+.searchToggle.active i.cancel{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.searchToggle.active i.search{
   opacity: 0;
   pointer-events: none;
 }
