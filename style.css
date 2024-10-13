@@ -54,6 +54,15 @@ nav .nav-bar{
   align-items: center;
   justify-content: space-between;
 }
+
+nav .nav-bar.sidebardOpen{
+  color: var(--text-color);
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
 nav .nav-bar .logo a{
   font-size: 25px;
   font-weight: 300;
@@ -61,6 +70,9 @@ nav .nav-bar .logo a{
   text-decoration: none;
 }
 
+.menu .logo-toggle{
+  display: none;
+}
 
 .nav-bar .nav-links{
   display: flex;
@@ -213,6 +225,12 @@ nav .nav-bar .logo a{
 }
 
 @media (max-width: 790px) {
+  
+  nav .nav-bar.sidebardOpen{
+    display: block;
+  }
+  
+  
   .menu{
     position: fixed;
     height: 100%;
@@ -225,6 +243,7 @@ nav .nav-bar .logo a{
   }
 
   .menu .logo-toggle{
+    display: block;
     width: 100%;
     display: flex;
     align-items: center;
