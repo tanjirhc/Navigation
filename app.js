@@ -1,7 +1,8 @@
 const body = document.querySelector("body"),
       nav = document.querySelector("nav"),
       modeToggle = document.querySelector(".dark-light"),
-      searchToggle = document.querySelector(".searchToggle");
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarClose = document.querySelector(".sidebarClose");
 
 // js code to toggle dark and light mode
       modeToggle.addEventListener("click" , () =>{
@@ -13,3 +14,6 @@ const body = document.querySelector("body"),
       searchToggle.addEventListener("click" , () =>{
         searchToggle.classList.toggle("active");
       })
+
+
+// js code to toggle sidebar
